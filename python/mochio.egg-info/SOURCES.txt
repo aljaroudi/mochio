@@ -1,0 +1,8 @@
+README.md
+setup.py
+mochio/__init__.py
+mochio/__main__.py
+mochio.egg-info/PKG-INFO
+mochio.egg-info/SOURCES.txt
+mochio.egg-info/dependency_links.txt
+mochio.egg-info/top_level.txt
