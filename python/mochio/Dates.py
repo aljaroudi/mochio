@@ -9,8 +9,11 @@ MS_PER_DAY = MS_PER_HOUR * 24
 MS_PER_WEEK = MS_PER_DAY * 7
 
 
-Duration = namedtuple(
-    'Duration', ['weeks', 'days', 'hours', 'minutes', 'seconds', 'ms'])
+class Duration(namedtuple(
+        'Duration', ['weeks', 'days', 'hours', 'minutes', 'seconds', 'ms'])):
+
+    def __repr__(self) -> str:
+        return "{} weeks, {} days, {} hours, {} minutes, {} seconds, {} ms".format(self.weeks, self.days, self.hours, self.minutes, self.seconds, self.ms)
 
 
 def ms_to_readable(ns: float) -> list[str]:
